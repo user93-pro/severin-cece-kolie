@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Courses - University Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <section class="sub-header course-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Courses</h1>
+  </section>
+
+  <!-- Course Categories -->
+  <section class="course-categories">
+    <h1>Explore Our Programs</h1>
+    <p>Choose from our wide range of academic programs</p>
+    
+    <div class="row">
+      <div class="category-col">
+        <h3>Undergraduate</h3>
+        <ul>
+          <li>Bachelor of Science in Computer Science</li>
+          <li>Bachelor of Arts in Economics</li>
+          <li>Bachelor of Engineering</li>
+          <li>Bachelor of Business Administration</li>
+          <li>Bachelor of Architecture</li>
+        </ul>
+      </div>
+      
+      <div class="category-col">
+        <h3>Graduate</h3>
+        <ul>
+          <li>Master of Science in Data Science</li>
+          <li>Master of Business Administration</li>
+          <li>Master of Arts in Psychology</li>
+          <li>Master of Engineering</li>
+          <li>Master of Public Health</li>
+        </ul>
+      </div>
+      
+      <div class="category-col">
+        <h3>Doctoral</h3>
+        <ul>
+          <li>PhD in Computer Science</li>
+          <li>PhD in Biological Sciences</li>
+          <li>PhD in Economics</li>
+          <li>PhD in Engineering</li>
+          <li>PhD in Education</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Details -->
+  <section class="course-details">
+    <h1>Featured Courses</h1>
+    
+    <div class="row">
+      <div class="course-detail-col">
+        <img src="images/informatique.png" alt="Computer Science">
+        <div class="course-info">
+          <h3>Computer Science</h3>
+          <p><i class="fa fa-clock-o"></i> Duration: 4 years</p>
+          <p><i class="fa fa-graduation-cap"></i> Degree: Bachelor of Science</p>
+          <p><i class="fa fa-dollar"></i> Tuition: $15,000/year</p>
+          <a href="#" class="hero-btn">Learn More</a>
+        </div>
+      </div>
+      
+      <div class="course-detail-col">
+        <img src="images/administration.png" alt="Business Administration">
+        <div class="course-info">
+          <h3>Business Administration</h3>
+          <p><i class="fa fa-clock-o"></i> Duration: 2 years</p>
+          <p><i class="fa fa-graduation-cap"></i> Degree: Master</p>
+          <p><i class="fa fa-dollar"></i> Tuition: $20,000/year</p>
+          <a href="#" class="hero-btn">Learn More</a>
+        </div>
+      </div>
+      
+      <div class="course-detail-col">
+        <img src="images/mecanique.png" alt="Engineering">
+        <div class="course-info">
+          <h3>Mechanical Engineering</h3>
+          <p><i class="fa fa-clock-o"></i> Duration: 4 years</p>
+          <p><i class="fa fa-graduation-cap"></i> Degree: Bachelor</p>
+          <p><i class="fa fa-dollar"></i> Tuition: $18,000/year</p>
+          <a href="#" class="hero-btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Requirements -->
+  <section class="admission">
+    <h1>Admission Requirements</h1>
+    <div class="row">
+      <div class="admission-col">
+        <h3>Undergraduate</h3>
+        <ul>
+          <li>High school diploma or equivalent</li>
+          <li>Minimum GPA of 3.0</li>
+          <li>SAT/ACT scores</li>
+          <li>Personal statement</li>
+          <li>Letters of recommendation</li>
+        </ul>
+      </div>
+      
+      <div class="admission-col">
+        <h3>Graduate</h3>
+        <ul>
+          <li>Bachelor's degree</li>
+          <li>Minimum GPA of 3.0</li>
+          <li>GRE/GMAT scores</li>
+          <li>Statement of purpose</li>
+          <li>Letters of recommendation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call To Action -->
+  <section class="cta">
+    <h1>Ready to start your academic journey?</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>    <div class="icons">
+      <i class="fab fa-facebook" aria-hidden="true"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="far fa-heart"></i> by Easy Tutorials</p>
+  </section>
+
+  <script>
+    const navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.classList.add("open");
+    }
+
+    function hideMenu() {
+      navLinks.classList.remove("open");
+    }
+  </script>
+</body>
+</html>

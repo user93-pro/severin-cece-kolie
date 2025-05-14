@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Website</title>  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" />
+</head>
+<body>
+
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>World's Biggest University</h1>
+      <p>Learn HTML, CSS, JavaScript and create beautiful websites!</p>
+      <a href="#" class="hero-btn">Visit Us to Know More</a>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section class="course">
+    <h1>Course We Offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus -->
+  <section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolias fugit aut, quisquam eius vitae.</p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="images/london.png">
+        <div class="layer"><h3>LONDON</h3></div>
+      </div>
+      <div class="campus-col">
+        <img src="images/newyork.png">
+        <div class="layer"><h3>NEW YORK</h3></div>
+      </div>
+      <div class="campus-col">
+        <img src="images/washington.png">
+        <div class="layer"><h3>WASHINGTON</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities -->
+  <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolias fugit aut, quisquam eius vitae.</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images/library.png">
+        <h3>World Class library</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/basketball.png">
+        <h3>Largest Play Ground</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/cafeteria.png">
+        <h3>Taste and Healthy Food</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h1>What Our Students Say</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="row">
+      <div class="testimonial-col">
+        <img src="images/user1.jpg">
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <h3>Christine Berkley</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      </div>
+      <div class="testimonial-col">
+        <img src="images/user2.jpg">
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <h3>David Byer</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call To Action -->
+  <section class="cta">
+    <h1>Enroll for our various online courses <br>Anywhere From The World</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>    <div class="icons">
+      <i class="fab fa-facebook" aria-hidden="true"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="far fa-heart"></i> by Easy Tutorials</p>
+  </section>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.getElementById("navLinks");
+      const easterEgg = document.querySelector('.easter-egg');
+      
+      function showMenu() {
+        navLinks.classList.add("open");
+      }
+
+      function hideMenu() {
+        navLinks.classList.remove("open");
+      }
+      window.showMenu = showMenu;
+      window.hideMenu = hideMenu;
+
+      document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && e.key === 'm') {
+          e.preventDefault(); 
+          easterEgg.classList.add('active');
+          setTimeout(() => {
+            easterEgg.classList.remove('active');
+          }, 3000);
+        }
+      });
+    });
+  </script>
+
+  <div class="easter-egg">
+    <div class="easter-egg-text">Optimus Prime</div>
+  </div>
+</body>
+</html>
